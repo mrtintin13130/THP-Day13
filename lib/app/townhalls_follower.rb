@@ -1,25 +1,27 @@
+# frozen_string_literal: true
+
 require 'twitter'
 require 'dotenv'
 require 'csv'
 Dotenv.load
 
-  client = Twitter::REST::Client.new do |config|
-  config.consumer_key        = ENV["TWITTER_API_KEY"]
-  config.consumer_secret     = ENV["TWITTER_API_SECRET"]
-  config.access_token        = ENV["TWITTER_API_TOKEN"]
-  config.access_token_secret = ENV["TWITTER_API_TOKEN_SECRET"]
+client = Twitter::REST::Client.new do |config|
+  config.consumer_key        = ENV['TWITTER_API_KEY']
+  config.consumer_secret     = ENV['TWITTER_API_SECRET']
+  config.access_token        = ENV['TWITTER_API_TOKEN']
+  config.access_token_secret = ENV['TWITTER_API_TOKEN_SECRET']
 end
 
-
-  @new_csv = if new_csv == ''
-                   "../db/townhalls.CSV"# rajouter chemin
-              else
-              new_csv
-              end
-@mairie = CSV.read(@new_csv) #methode de scrapping a rajouter
-
-
-
-  @mairie.each do |commune|# iteration sur le nom de chaque commune
-  mairie = client.user_search(commune["name"])# recherche par noms de commune sur twitter
-  puts mairie
+array_allinf = CSV.read('../../db/townhalls.csv')
+x = 0
+y = 1
+while array_allinf[x]
+  if array_allinf[x][2] && x > 0
+    client.follow(array_allinf[x][2])
+    puts "Je follow #{array_allinf[x][2]}"
+    x += 1
+  else
+    x += 1
+  end
+  y += 1
+end

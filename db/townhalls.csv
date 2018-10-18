@@ -1,21 +1,21 @@
 nom,mail,handle
-AIX EN PROVENCE,communication@mairie-aixenprovence.fr,
-ALLAUCH,info@allauch.com,#<Twitter::User:0x00005585f52868d0>
+AIX EN PROVENCE,communication@mairie-aixenprovence.fr,DemocratieAix
+ALLAUCH,info@allauch.com,
 ALLEINS,mairie.alleins@wanadoo.fr,
 ARLES,lemaire@ville-arles.fr,
-AUBAGNE,contact@mairie-aubagne.com,
-AUREILLE,maire-mairie-aureille@wanadoo.fr,#<Twitter::User:0x00005585f51a7a40>
+AUBAGNE,contact@mairie-aubagne.com,villedaubagne
+AUREILLE,maire-mairie-aureille@wanadoo.fr,
 AURIOL,mairie-auriol@wanadoo.fr,
 AURONS,serrano.rm@wanadoo.fr,
 BARBENTANE,contact.mairie@barbentane.fr,
 BEAURECUEIL,beaurecueil-mairie@wanadoo.fr,
 BELCODENE,mairie@belcodene.fr,
 BERRE L ETANG,s.andreoni@berre-l-etang.fr,
-BOUC BEL AIR,com@boucbelair.com,
-BOULBON,mairiedeboulbon@wanadoo.fr,#<Twitter::User:0x00005585f505d6d0>
-CABANNES,mairiedecabannes@wanadoo.fr,
-CABRIES,com.mairie@cabries.fr,#<Twitter::User:0x00005585f51a66b8>
-CADOLIVE,mairie-cadolive@orange.fr,#<Twitter::User:0x00005585f52a6c48>
+BOUC BEL AIR,com@boucbelair.com,MairieBBA
+BOULBON,mairiedeboulbon@wanadoo.fr,
+CABANNES,mairiedecabannes@wanadoo.fr,LesCabannes09
+CABRIES,com.mairie@cabries.fr,MairieCabries
+CADOLIVE,mairie-cadolive@orange.fr,
 CARNOUX EN PROVENCE,m.beguelin@mairie-carnoux.fr,
 CARRY LE ROUET,mairie@mairie-carrylerouet.fr,
 CASSIS EN PROVENCE,admingen@cassis.fr,
@@ -42,8 +42,8 @@ GRANS,accueil.grans@orange.fr,
 GRAVESON,mairie-graveson@ville-graveson.fr,
 GREASQUE,mairie-greasque@ville-greasque.fr,
 ISTRES,dgs@istres.fr,
-JOUQUES,dgs.mairie-jouques@wanadoo.fr,
-LA BARBEN,mairie.la-barben@wanadoo.fr,#<Twitter::User:0x00005585f576bcd8>
+JOUQUES,dgs.mairie-jouques@wanadoo.fr,MairiedeJouques
+LA BARBEN,mairie.la-barben@wanadoo.fr,
 LA BOUILLADISSE,mairilab@wanadoo.fr,
 LA CIOTAT,communication@mairie-laciotat.fr,
 LA DESTROUSSE,dgs@mairieladestrousse.com,
@@ -61,8 +61,8 @@ LE THOLONET,mairie.letholonet@wanadoo.fr,
 MAILLANE,mairiedemaillane@wanadoo.fr,
 MALLEMORT,mairie.mallemort@wanadoo.fr,
 MARIGNANE,contact@ville-marignane.fr,
-MARSEILLE,sgm-internet-direction@mairie-marseille.fr,
-MARSEILLE SECTEUR 01,"",#<Twitter::User:0x00005585f576d8a8>
+MARSEILLE,sgm-internet-direction@mairie-marseille.fr,brunogilles13
+MARSEILLE SECTEUR 01,"",
 MARSEILLE SECTEUR 02,"",
 MARSEILLE SECTEUR 03,"",
 MARSEILLE SECTEUR 04,"",
@@ -76,8 +76,8 @@ MAUSSANE LES ALPILLES,mairie-maussane-les-alpilles@wanadoo.fr,
 MEYRARGUES,meyrarguesinfosmairie@wanadoo.fr,
 MEYREUIL,info@ville-meyreuil.fr,
 MIMET,mimet.mairie@wanadoo.fr,
-MIRAMAS,le.maire@mairie-miramas.fr,
-MOLLEGES,mairie-molleges@wanadoo.fr,#<Twitter::User:0x00005585f5576fb8>
+MIRAMAS,le.maire@mairie-miramas.fr,miramas_ville
+MOLLEGES,mairie-molleges@wanadoo.fr,
 MOURIES,dgs@mairie-mouries.fr,
 NOVES,mairie.de.noves@wanadoo.fr,
 ORGON,mairie@orgon.fr,
@@ -91,13 +91,13 @@ PLAN D ORGON,mairie.de.plan.d-orgon@wanadoo.fr,
 PORT DE BOUC,contact@portdebouc.fr,
 PORT SAINT LOUIS DU RHONE,cabinetdumaire@portsaintlouis.fr,
 PUYLOUBIER,mairie-de-puyloubier@wanadoo.fr,
-ROGNAC,communication@mairie-rognac.fr,
-ROGNES,info@ville-rognes.fr,#<Twitter::User:0x00005585f563a468>
+ROGNAC,communication@mairie-rognac.fr,sabdelma13
+ROGNES,info@ville-rognes.fr,
 ROGNONAS,rognonas.accueil@wanadoo.fr,
 ROQUEFORT LA BEDOULE,accueil@roquefort-labedoule.fr,
 ROQUEVAIRE,contact@ville-roquevaire.fr,
-ROUSSET,mairie@rousset-fr.com,
-SAINT ANDIOL,mairie@st-andiol.fr,#<Twitter::User:0x00005585f556a8a8>
+ROUSSET,mairie@rousset-fr.com,MairieRousset
+SAINT ANDIOL,mairie@st-andiol.fr,
 SAINT ANTONIN SUR BAYON,mairiestantonin@wanadoo.fr,
 SAINT CANNAT,webmestre@ville-saint-cannat.fr,
 SAINT CHAMAS,contact@saint-chamas.com,
@@ -120,13 +120,13 @@ SIMIANE COLLONGUE,accueil.mairie@simiane-collongue.fr,
 TARASCON,courrier@mairie-tarascon13.fr,
 TRETS,accueil@ville-de-trets.fr,
 VAUVENARGUES,mairie-vauvenargues@wanadoo.fr,
-VELAUX,scecom@mairie-de-velaux.fr,
-VENELLES,communication@Venelles.fr,#<Twitter::User:0x00005585f57694d8>
-VENTABREN,moyensgeneraux@ventabren.fr,
-VERNEGUES,mairie.vernegues@wanadoo.fr,#<Twitter::User:0x00005585f52ad160>
+VELAUX,scecom@mairie-de-velaux.fr,MVELAUX
+VENELLES,communication@Venelles.fr,
+VENTABREN,moyensgeneraux@ventabren.fr,13122Ventabren
+VERNEGUES,mairie.vernegues@wanadoo.fr,
 VERQUIERES,mairie-de-verquieres@wanadoo.fr,
-VITROLLES,communication@ville-vitrolles13.fr,
-AGHIONE,commune-aghione@wanadoo.fr,#<Twitter::User:0x00005585f5640200>
+VITROLLES,communication@ville-vitrolles13.fr,Marcel_Yde
+AGHIONE,commune-aghione@wanadoo.fr,
 AITI,"",
 ALANDO,mairiealando@wanadoo.fr,
 ALBERTACCE,mairie.albertacce.corse@wanadoo.fr,
@@ -137,17 +137,17 @@ ALZI,mairie.alzi@wanadoo.fr,
 AMPRIANI,mairie-ampriani@wanadoo.fr,
 ANTISANTI,mairie.antisanti@wanadoo.fr,
 AREGNO,mairie.aregno@wanadoo.fr,
-ASCO,mairie.asco@corcikadsl.com,
-AVAPESSA,mairie.avapessa@wanadoo.fr,#<Twitter::User:0x00005585f548c5d0>
+ASCO,mairie.asco@corcikadsl.com,mairieasco
+AVAPESSA,mairie.avapessa@wanadoo.fr,
 BARBAGGIO,barbaggio@wanadoo.fr,
-BARRETTALI,secretariat.barrettali@wanadoo.fr,
-BASTIA,maire@ville-bastia.fr,#<Twitter::User:0x00005585f563bb88>
-BELGODERE,mairie.belgodere@wanadoo.fr,#<Twitter::User:0x00005585f5271c28>
+BARRETTALI,secretariat.barrettali@wanadoo.fr,CAPBARRETTALI
+BASTIA,maire@ville-bastia.fr,Bonifayjeanyves
+BELGODERE,mairie.belgodere@wanadoo.fr,
 BIGORNO,"",
-BIGUGLIA,mairie.biguglia@wanadoo.fr,
-BISINCHI,mairie.bisinchi@wanadoo.fr,#<Twitter::User:0x00005585f56b17c0>
-BORGO,mairie-borgo@wanadoo.fr,
-BRANDO,Mairie-de-brando@wanadoo.fr,#<Twitter::User:0x00005585f5485898>
+BIGUGLIA,mairie.biguglia@wanadoo.fr,MairieBiguglia
+BISINCHI,mairie.bisinchi@wanadoo.fr,
+BORGO,mairie-borgo@wanadoo.fr,MairieDeBorgo
+BRANDO,Mairie-de-brando@wanadoo.fr,
 BUSTANICO,mairie-de-bustanico@wanadoo.fr,
 CAGNANO,mairie.de.cagnano@orange.fr,
 CALACUCCIA,mairie.calacuccia@wanadoo.fr,
@@ -183,8 +183,8 @@ CHIATRA DI VERDE,chiatra.commune@wanadoo.fr,
 CHISA,mairie.chisa@wanadoo.fr,
 CORBARA,corbara3@wanadoo.fr,
 CORSCIA,mairie-corscia@orange.fr,
-CORTE,mairie@mairie-corte.fr,
-COSTA,mairie.costa@wanadoo.fr,#<Twitter::User:0x00005585f56d5800>
+CORTE,mairie@mairie-corte.fr,Jeanpacorte
+COSTA,mairie.costa@wanadoo.fr,
 CROCE,"",
 CROCICCHIA,mairiedecrocicchia@orange.fr,
 ERBAJOLO,mairie.erbajolo@orange.fr,
@@ -196,11 +196,11 @@ FELCE,"",
 FELICETO,mairie.feliceto@sfr.fr,
 FICAJA,mairieficaja@wanadoo.fr,
 FOCICCHIA,mairie-focicchia@orange.fr,
-FURIANI,babeth.vecchioli@wanadoo.fr,
-GALERIA,galeria.mairie@wanadoo.fr,#<Twitter::User:0x00005585f536f0d0>
+FURIANI,babeth.vecchioli@wanadoo.fr,MairieFuriani
+GALERIA,galeria.mairie@wanadoo.fr,
 GAVIGNANO,mairie-gavignano@wanadoo.fr,
-GHISONACCIA,mairie.ghisonaccia@wanadoo.fr,
-GHISONI,mairie.ghisoni@wanadoo.fr,#<Twitter::User:0x00005585f51a0ce0>
+GHISONACCIA,mairie.ghisonaccia@wanadoo.fr,MairieGhisonacc
+GHISONI,mairie.ghisoni@wanadoo.fr,
 GIOCATOJO,mairie-giocatojo@wanadoo.fr,
 GIUNCAGGIO,mairie-de-guincaggio@wanadoo.fr,
 ISOLACCIO DI FIUMORBO,info@isolacciodifiumorbu.com,
@@ -208,8 +208,8 @@ LAMA,mairie-de-lama@wanadoo.fr,
 LANO,"",
 LA PORTA,mairielaporta@sfr.fr,
 LAVATOGGIO,mairie.lavatoggio@wanadoo.fr,
-LENTO,mairie.lento@orange.fr,
-L ILE ROUSSE,ile-rousse.mairie@wanadoo.fr,#<Twitter::User:0x00005585f5639568>
+LENTO,mairie.lento@orange.fr,LentoMairie
+L ILE ROUSSE,ile-rousse.mairie@wanadoo.fr,
 LINGUIZZETTA,mairie-linguizzetta@wanadoo.fr,
 LORETO DI CASINCA,mairieloreto@wanadoo.fr,
 LOZZI,cumuna-lozzi@orange.fr,
@@ -229,15 +229,15 @@ MONCALE,moncale.mairie@wanadoo.fr,
 MONTE,monte.mairie@wanadoo.fr,
 MONTEGROSSO,mairie.de.montegrosso@wanadoo.fr,
 MONTICELLO,mairie-de-monticello@wanadoo.fr,
-MOROSAGLIA,mairie.morosaglia@wanadoo.fr,
-MORSIGLIA,yves.stella@wanadoo.fr,#<Twitter::User:0x00005585f529f740>
+MOROSAGLIA,mairie.morosaglia@wanadoo.fr,morosagliapl
+MORSIGLIA,yves.stella@wanadoo.fr,
 MURACCIOLE,commune-muracciole@wanadoo.fr,
 MURATO,mairiemurato@wanadoo.fr,
 MURO,casacumuna.20225.muro@wanadoo.fr,
 NESSA,mairiedenessa@orange.fr,
 NOCARIO,mairiedenocario@orange.fr,
-NOCETA,commune-noceta@wanadoo.fr,
-NONZA,nonza@wanadoo.fr,#<Twitter::User:0x00005585f57870c8>
+NOCETA,commune-noceta@wanadoo.fr,MairieNoceta
+NONZA,nonza@wanadoo.fr,
 NOVALE,mairie.novale@mic.fr,
 NOVELLA,jean.padovani@wanadoo.fr,
 OCCHIATANA,occhiatana@wanadoo.fr,
@@ -248,8 +248,8 @@ OLMETA DI CAPO CORSO,olmeta.capocorso@wanadoo.fr,
 OLMETA DI TUDA,olmeta.dituda.mairie@wanadoo.fr,
 OLMI CAPPELLA,mairie-olmi-cappella@wanadoo.fr,
 OLMO,mairieolmo@wanadoo.fr,
-OMESSA,mairie-omessa@orange.fr,
-ORTALE,mairie.ortale@wanadoo.fr,#<Twitter::User:0x00005585f52a5fa0>
+OMESSA,mairie-omessa@orange.fr,MairieOmessa
+ORTALE,mairie.ortale@wanadoo.fr,
 ORTIPORIO,mairiedortiporio@yahoo.fr,
 PALASCA,mairiedepalasca@orange.fr,
 PANCHERACCIA,mairie.pancheraccia@wanadoo.fr,
@@ -292,15 +292,15 @@ PRUNELLI DI CASACCONI,mairie.prunelli-di-casacconi@orange.fr,
 PRUNELLI DI FIUMORBO,mairiedeprunellidifiumorbu@orange.fr,
 PRUNO,mairiedepruno@wanadoo.fr,
 QUERCITELLO,"",
-RAPAGGIO,"",
-RAPALE,mairiederapale@wanadoo.fr,#<Twitter::User:0x00005585f53a41b8>
+RAPAGGIO,"",MAIRIERAPAGGIO
+RAPALE,mairiederapale@wanadoo.fr,
 RIVENTOSA,mairie.riventosa@wanadoo.fr,
 ROGLIANO,mairiederogliano@orange.fr,
 ROSPIGLIANI,commune.de.rospigliani@wanadoo.fr,
 RUSIO,mairie.rusio@orange.fr,
 RUTALI,mairie.rutali@wanadoo.fr,
-SAINT FLORENT,mairie.saint-florent.corse [ à ] wanadoo.fr,
-SALICETO,rrinaldi311@aol.com,#<Twitter::User:0x00005585f554e900>
+SAINT FLORENT,mairie.saint-florent.corse [ à ] wanadoo.fr,Mairie_Niort
+SALICETO,rrinaldi311@aol.com,
 SAN DAMIANO,"",
 SAN GAVINO D AMPUGNANI,commune-san-gavino-dampugnani@orange.fr,
 SAN GAVINO DI FIUMORBO,mairie.sangavinodifiumo@wanadoo.fr,
@@ -312,8 +312,8 @@ SAN MARTINO DI LOTA,mairiesanmartinodl@wanadoo.fr,
 SAN NICOLAO,sn2b@wanadoo.fr,
 SANTA LUCIA DI MERCURIO,pauluparigi@aol.com,
 SANTA LUCIA DI MORIANI,mairie-santa-lucia-di-moriani@wanadoo.fr,
-SANTA MARIA DI LOTA,SANTAMARIADILOTA@wanadoo.fr,
-SANTA MARIA POGGIO,mairie.santamariapoghju@wanadoo.fr,#<Twitter::User:0x00005585f5776228>
+SANTA MARIA DI LOTA,SANTAMARIADILOTA@wanadoo.fr,Commune_SMDL
+SANTA MARIA POGGIO,mairie.santamariapoghju@wanadoo.fr,
 SANT ANDREA DI BOZIO,mairie.santandreadibozio@wanadoo.fr,
 SANT ANDREA DI COTONE,mairie.santandreacotone@orange.fr,
 SANT ANTONINO,mairiesantantonino@wanadoo.fr,
@@ -327,8 +327,8 @@ SERMANO,mairiedesermano@orange.fr,
 SERRA DI FIUMORBO,mairieserra@wanadoo.fr,
 SILVARECCIO,silvareccio@wanadoo.fr,
 SISCO,mairie.sisco@wanadoo.fr,
-SOLARO,communedesolaro@orange.fr,
-SORBO OCAGNANO,mairie.sorbo@mic.fr,#<Twitter::User:0x00005585f554ef18>
+SOLARO,communedesolaro@orange.fr,COMMUNEDESOLARO
+SORBO OCAGNANO,mairie.sorbo@mic.fr,
 SORIO,mairiedesorio@wanadoo.fr,
 SOVERIA,mairiesoveria@orange.fr,
 SPELONCATO,Jean-Francois.Poli@wanadoo.fr,
@@ -349,8 +349,8 @@ VALLE D OREZZA,"",
 VALLICA,vallica.mairie@free.fr,
 VELONE ORNETO,communedeveloneorneto@orange.fr,
 VENACO,mairie.venaco@orange.fr,
-VENTISERI,"",
-VENZOLASCA,mairie.venzolasca@wanadoo.fr,#<Twitter::User:0x00005585f50c5848>
+VENTISERI,"",mairieVentiseri
+VENZOLASCA,mairie.venzolasca@wanadoo.fr,
 VERDESE,"",
 VESCOVATO,mairie-vescovato@wanadoo.fr,
 VEZZANI,vezzani2@wanadoo.fr,
@@ -381,8 +381,8 @@ BOTANS,mairie.debotans@wanadoo.fr,
 BOURG SOUS CHATELET,mairiedebourg@wanadoo.fr,
 BOUROGNE,mairie.bourogne@wanadoo.fr,
 BREBOTTE,mairie.brebotte90@wanadoo.fr,
-BRETAGNE,mairie-bretagne@wanadoo.fr,
-BUC,mairie-buc90@wanadoo.fr,#<Twitter::User:0x00005585f5291690>
+BRETAGNE,mairie-bretagne@wanadoo.fr,allomairieBZH
+BUC,mairie-buc90@wanadoo.fr,
 CHARMOIS,mairie.charmois@wanadoo.fr,
 CHATENOIS LES FORGES,chatenois.mairie@wanadoo.fr,
 CHAUX,mairie.chaux90@wanadoo.fr,
@@ -392,12 +392,12 @@ CHEVREMONT,commune-chevremont@wanadoo.fr,
 COURCELLES,courcellesmairie@orange.fr,
 COURTELEVANT,mairie-courtelevant@wanadoo.fr,
 CRAVANCHE,contact@cravanche.fr,
-CROIX,mairie.croix90@wanadoo.fr,
-CUNELIERES,mairie-cunelieres@orange.fr,#<Twitter::User:0x00005585f56e0840>
+CROIX,mairie.croix90@wanadoo.fr,LesCagettesDeJD
+CUNELIERES,mairie-cunelieres@orange.fr,
 DANJOUTIN,secretariat@mairiedanjoutin.fr,
 DELLE,mairie@delle.fr,
-DENNEY,mairie@denney.fr,
-DORANS,mairie.dorans@wanadoo.fr,#<Twitter::User:0x00005585f50e06c0>
+DENNEY,mairie@denney.fr,denney90160
+DORANS,mairie.dorans@wanadoo.fr,
 EGUENIGUE,mairie.eguenigue@wanadoo.fr,
 ELOIE,eloie.mairie@wanadoo.fr,
 ESSERT,mairie@essert-france.eu,
@@ -407,8 +407,8 @@ FAVEROIS,mairie.faverois@wanadoo.fr,
 FECHE L EGLISE,mairie.feche@wanadoo.fr,
 FELON,mairiefelon@orange.fr,
 FLORIMONT,mairie.de.florimont@wanadoo.fr,
-FONTAINE,fontaine.mairie@wanadoo.fr,
-FONTENELLE,mairie.fontenelle90@wanadoo.fr,#<Twitter::User:0x00005585f5622340>
+FONTAINE,fontaine.mairie@wanadoo.fr,fontaine38600
+FONTENELLE,mairie.fontenelle90@wanadoo.fr,
 FOUSSEMAGNE,secretariat@foussemagne.com,
 FRAIS,mairie.frais90@orange.fr,
 FROIDEFONTAINE,mairie.froidefontaine@wanadoo.fr,

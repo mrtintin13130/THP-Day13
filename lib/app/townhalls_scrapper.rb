@@ -69,14 +69,6 @@ def create_hash(name, mail)
     x += 1
   end
   x = 0
-=begin
-  while name[x]
-    puts hash_mails[x]["Nom"]
-    puts "#{hash_mails[x]["Mail"]} \n\n"
-    x += 1
-  end
-  sleep(1)
-=end
   puts hash_mails
   return hash_mails
 end
@@ -99,3 +91,4 @@ end
 
 
 hash_mails.to_csv("../../db/townhalls.csv")
+
