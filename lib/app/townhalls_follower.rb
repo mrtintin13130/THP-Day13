@@ -10,13 +10,16 @@ Dotenv.load
   config.access_token_secret = ENV["TWITTER_API_TOKEN_SECRET"]
 end
 
-array_allinf = CSV.read('../../db/townhalls.csv')
-x = 0
-while array_allinf[x]
-  if array_allinf[x] = nil
-    x += 1
-  else
-    client.follow(array_allinf[x][2])
-    x += 1
-  end
-end
+
+  @new_csv = if new_csv == ''
+                   "../db/townhalls.CSV"# rajouter chemin
+              else
+              new_csv
+              end
+@mairie = CSV.read(@new_csv) #methode de scrapping a rajouter
+
+
+
+  @mairie.each do |commune|# iteration sur le nom de chaque commune
+  mairie = client.user_search(commune["name"])# recherche par noms de commune sur twitter
+  puts mairie
