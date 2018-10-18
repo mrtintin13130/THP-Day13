@@ -13,6 +13,10 @@ end
 array_allinf = CSV.read('../../db/townhalls.csv')
 x = 0
 while array_allinf[x]
+  if array_allinf[x] = nil
+    x += 1
+  else
     client.follow(array_allinf[x][2])
     x += 1
+  end
 end
