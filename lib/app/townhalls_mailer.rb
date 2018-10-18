@@ -2,7 +2,7 @@ require 'mail'
 require 'csv'
 require 'net/smtp'
 
-array_allinf = CSV.read('../../db/test.csv')
+array_allinf = CSV.read('../../db/townhalls.csv')
 x = 0
 #class mailer
   options = {  :address => "smtp.gmail.com", # Options STMP
