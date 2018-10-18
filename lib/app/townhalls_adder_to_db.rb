@@ -1,31 +1,35 @@
 require 'twitter'
 require 'dotenv'
-require 'townhalls_scrapper.rb' # rajouter nom fichier
+require 'csv'
 Dotenv.load
 
 # quelques lignes qui enregistrent les clés d'APIs
 
-def initialize(csv_filename="test.csv")
   client = Twitter::REST::Client.new do |config|
   config.consumer_key        = ENV["TWITTER_API_KEY"]
   config.consumer_secret     = ENV["TWITTER_API_SECRET"]
   config.access_token        = ENV["TWITTER_API_TOKEN"]
   config.access_token_secret = ENV["TWITTER_API_TOKEN_SECRET"]
 end
-def scrap
-  require'csv'
-  @mairie =CSV.read(csv_filename, "wb") do |csv|
 
-@ville = get_all_names.new.read(@mairie) #methode de scrapping a rajouter
-  #methode de scrapping a rajouter
+x = 400
+array_allinf = CSV.read('../../db/townhalls.csv')
+array_userid = []
+while array_allinf[x]
+	@twitter = client.user_search("Mairie " + array_allinf[x][0])
+	array_userid[x] = @twitter.first
+	puts x
+	puts array_userid[x]
+	x += 1
+end
 
-
-def add_handle
-  @ville.each do |commune|# iteration sur le nom de chaque commune
-  mairie = client.user_search(commune["name"])# recherche par noms de commune sur twitter
-  puts mairie
-
-  end
-  
-
+y = 0
+CSV.open('../../db/townhalls.csv', 'a+').each do |csv|
+	if array_userid[y]
+		csv << array_userid[y]
+		puts array_userid[y]
+		y += 1
+	else
+		puts "ça existe pas"
+	end
 end

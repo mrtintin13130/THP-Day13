@@ -1,12 +1,8 @@
 require 'twitter'
 require 'dotenv'
- load 'townhalls_adder_to_db.rb'
- require 'csv'
+ # rajouter nom fichier
+require 'csv'
 Dotenv.load
-
-# quelques lignes qui enregistrent les clés d'APIs
-
-
 
   client = Twitter::REST::Client.new do |config|
   config.consumer_key        = ENV["TWITTER_API_KEY"]
@@ -15,5 +11,11 @@ Dotenv.load
   config.access_token_secret = ENV["TWITTER_API_TOKEN_SECRET"]
 end
 
-@mairie = add_handle.new
-client.follow(@mairie)
+array_allinf = CSV.read('../../db/townhalls.csv')
+x = 0
+
+while array_allinf[x]
+    @twitter = client.user_search("Mairie " + array_allinf[x][0])
+    puts "je follow bien"
+    client.follow(@twitter.first)
+end
