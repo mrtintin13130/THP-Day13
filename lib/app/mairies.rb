@@ -5,9 +5,19 @@ require 'csv'
 
 def get_names
   page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/bouches-du-rhone.html"))
+  page2 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/haute-corse.html"))
+  page3 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/territoire-de-belfort.html"))
   x = 0
   names = Array.new
   all_names = page.css(".lientxt").each do |n|
+    names[x] = n.text
+    x += 1
+  end
+  all_names = page2.css(".lientxt").each do |n|
+    names[x] = n.text
+    x += 1
+  end
+  all_names = page3.css(".lientxt").each do |n|
     names[x] = n.text
     x += 1
   end
@@ -15,11 +25,20 @@ def get_names
 end
 
 def all_links
-
   page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/bouches-du-rhone.html"))
+  page2 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/haute-corse.html"))
+  page3 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/territoire-de-belfort.html"))
   x = 0
   lien = Array.new
   url = page.css(".lientxt").each do |link|
+    lien[x] = "http://annuaire-des-mairies.com" + link['href'][1..-1]
+    x += 1
+  end
+  url = page2.css(".lientxt").each do |link|
+    lien[x] = "http://annuaire-des-mairies.com" + link['href'][1..-1]
+    x += 1
+  end
+  url = page3.css(".lientxt").each do |link|
     lien[x] = "http://annuaire-des-mairies.com" + link['href'][1..-1]
     x += 1
   end
