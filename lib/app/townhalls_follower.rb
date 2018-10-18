@@ -1,6 +1,7 @@
 require 'twitter'
 require 'dotenv'
- # rajouter nom fichier
+ load 'townhalls_adder_to_db.rb'
+ require 'csv'
 Dotenv.load
 
 # quelques lignes qui enregistrent les clés d'APIs
@@ -14,5 +15,5 @@ Dotenv.load
   config.access_token_secret = ENV["TWITTER_API_TOKEN_SECRET"]
 end
 
-
-client.update '1er tweet thp make it easy'
+@mairie = add_handle.new
+client.follow(@mairie)
