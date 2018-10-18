@@ -63,4 +63,4 @@ get_all_the_urls_of_90
 get_all_email
 get_all_names
 cities_hash = @array_name.zip(@array_email)
-CSV.open("data.csv", "wb") {|csv| cities_hash.to_a.each {|elem| csv << elem} }
+CSV.open("../../db/townhalls.csv", "wb") {|csv| cities_hash.to_a.each {|elem| csv << elem} }
