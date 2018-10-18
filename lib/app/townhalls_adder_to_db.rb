@@ -24,8 +24,8 @@ end
 
       begin
         client.follow!(mairie[0])
-        commune['mairie'] = "@" + mairie[0].screen_name
+        commune['mairie'] = "@mairie" +  mairie[0].screen_name
       rescue StandardError
-puts "Error: can't find a twitter account for #{commune['mairie']}"
+puts "Error: can't find a twitter account for #{commune[0]}"
 end
 end
