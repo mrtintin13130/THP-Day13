@@ -1,66 +1,101 @@
+require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
 require 'csv'
 
-def get_all_the_urls_of_2B
-  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/haute-corse.html"))
-  @array_2B = []
-  x = 0
-  page.css("a.lientxt").each do |n|
-	@array_2B[x] = "http://annuaire-des-mairies.com" + n["href"][1..-1]
-    x += 1
-  end
-end
-
-def get_all_the_urls_of_13
+def get_names
   page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/bouches-du-rhone.html"))
-  @array_13 = []
+  page2 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/haute-corse.html"))
+  page3 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/territoire-de-belfort.html"))
   x = 0
-  page.css("a.lientxt").each do |n|
-	@array_13[x] = "http://annuaire-des-mairies.com" + n["href"][1..-1]
+  names = Array.new
+  all_names = page.css(".lientxt").each do |n|
+    names[x] = n.text
     x += 1
+  end
+  all_names = page2.css(".lientxt").each do |n|
+    names[x] = n.text
+    x += 1
+  end
+  all_names = page3.css(".lientxt").each do |n|
+    names[x] = n.text
+    x += 1
+  end
+  return names
+end
+
+def all_links
+  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/bouches-du-rhone.html"))
+  page2 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/haute-corse.html"))
+  page3 = Nokogiri::HTML(open("http://annuaire-des-mairies.com/territoire-de-belfort.html"))
+  x = 0
+  lien = Array.new
+  url = page.css(".lientxt").each do |link|
+    lien[x] = "http://annuaire-des-mairies.com" + link['href'][1..-1]
+    x += 1
+  end
+  url = page2.css(".lientxt").each do |link|
+    lien[x] = "http://annuaire-des-mairies.com" + link['href'][1..-1]
+    x += 1
+  end
+  url = page3.css(".lientxt").each do |link|
+    lien[x] = "http://annuaire-des-mairies.com" + link['href'][1..-1]
+    x += 1
+  end
+  return lien
+end
+
+def get_all_the_mails_of_val_doise_townhalls(links)
+  x = 0
+  my_mails = Array.new
+  while links[x]
+    pages = Nokogiri::HTML(open(links[x]))
+    mails = pages.css("tr")
+    my_mails[x] = mails.xpath("/html/body/div/main/section[2]/div/table/tbody/tr[4]/td[2]").text
+    #puts my_mails[x]
+    x+=1
+  end
+  return my_mails
+end
+
+def create_hash(name, mail)
+  x = 0
+  hash_mails = []
+  while name[x]
+    hash_mails[x] = { 
+      :Nom => name[x], 
+      :Mail => mail[x]
+    }
+    x += 1
+  end
+  x = 0
+=begin
+  while name[x]
+    puts hash_mails[x]["Nom"]
+    puts "#{hash_mails[x]["Mail"]} \n\n"
+    x += 1
+  end
+  sleep(1)
+=end
+  puts hash_mails
+  return hash_mails
+end
+
+links = all_links
+hash_mails = create_hash(get_names, get_all_the_mails_of_val_doise_townhalls(links))
+
+
+class Array
+  def to_csv(csv_filename="test.csv")
+    require 'csv'
+    CSV.open(csv_filename, "wb") do |csv|
+      csv << first.keys # adds the attributes name on the first line
+      self.each do |hash|
+        csv << hash.values
+      end
+    end
   end
 end
 
-def get_all_the_urls_of_90
-  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/territoire-de-belfort.html"))
-  @array_90 = []
-  x = 0
-  page.css("a.lientxt").each do |n|
-	@array_90[x] = "http://annuaire-des-mairies.com" + n["href"][1..-1]
-    x += 1
-  end
-end
 
-def get_all_email()
-y = 0
-@array_email = []
-465.times do |m|
-page_email = Nokogiri::HTML(open(@cities_url[m]))
-	page_email.css('/html/body/div/main/section[2]/div/table/tbody/tr[4]/td[2]').each do |j|
-		@array_email[y] = j.content
-		y += 1
-	end
-end
-end
-
-def get_all_names()
-y = 0
-@array_name = []
-465.times do |m|
-page_email = Nokogiri::HTML(open(@cities_url[m]))
-	page_email.xpath('/html/body/div/main/section[1]/div/div/div/h1').each do |j|
-		@array_name[y] = j.content
-		y += 1
-	end
-end
-end
-
-get_all_the_urls_of_2B
-get_all_the_urls_of_13
-get_all_the_urls_of_90
-@cities_url = (@array_2B << @array_13 << @array_90).flatten
-get_all_email
-get_all_names
-cities_hash = @array_name.zip(@array_email)
-CSV.open("../../db/townhalls.csv", "wb") {|csv| cities_hash.to_a.each {|elem| csv << elem} }
+hash_mails.to_csv("../../db/townhalls.csv")
