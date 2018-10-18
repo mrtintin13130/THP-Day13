@@ -4,7 +4,7 @@ require 'open-uri'
 require 'csv'
 
 def get_names
-  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/val-d-oise.html"))
+  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/bouches-du-rhone.html"))
   x = 0
   names = Array.new
   all_names = page.css(".lientxt").each do |n|
@@ -16,7 +16,7 @@ end
 
 def all_links
 
-  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/val-d-oise.html"))
+  page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/bouches-du-rhone.html"))
   x = 0
   lien = Array.new
   url = page.css(".lientxt").each do |link|
@@ -79,4 +79,4 @@ class Array
 end
 
 
-hash_mails.to_csv
+hash_mails.to_csv("../../db/townhalls.csv")
