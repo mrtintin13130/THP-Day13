@@ -1,8 +1,9 @@
 require 'twitter'
 require 'dotenv'
 require 'fichier scrapper' # rajouter nom fichier
+require 'csv'
 Dotenv.load
-
+townshalls = CSV.read('../../db/townshalls.csv')
 # quelques lignes qui enregistrent les clés d'APIs
 class Following
 
@@ -13,23 +14,17 @@ def initialize(new_json = '')
   config.access_token        = ENV["TWITTER_API_TOKEN"]
   config.access_token_secret = ENV["TWITTER_API_TOKEN_SECRET"]
 end
-def scrap
-  @new_json = if new_json == ''
-                   "/../.JSON"
-              else
-              new_json
-              end
-@mairie = Scrapper.new.read(@new_json) #methode de scrapping a rajouter
 
 
-def follow
-  @mairie.each do |commune|# iteration sur le nom de chaque commune
-  mairie = client.user_search(commune["name"])# recherche par noms de commune sur twitter
-  begin 
-  client.follow!(mairie[0])# follow a partir d'un handle
-  commune["mairie"] = "@" + mairie[0].screen_name #ajout @ devant le nom de commune
+      get_names.each do |follow|
+      Twitter.search("Mairie #{follow}")
+    end
 
-  end
-  
+      end
+
+
+
+
+    end
 
 end
