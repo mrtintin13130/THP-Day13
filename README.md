@@ -54,7 +54,7 @@ $ bundle install
 ```
 ## Lancement
 Très simple ! Tapez ceci dans la racine :
-(Ne fonctionne pas, lancez tous les programmes 1 par 1 dans le dossier lib/app)
+## **(Ne fonctionne pas, lancez tous les programmes 1 par 1 dans le dossier lib/app)**
 ```
 $ ruby app.rb
 ```
